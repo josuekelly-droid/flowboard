@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://flowboard.vercel.app",
+    url: "https://flowboard-topaz.vercel.app/",
     siteName: "FlowBoard",
     title: "FlowBoard - Hub de Productivité pour Freelances",
     description:
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://flowboard.vercel.app",
+    canonical: "https://flowboard-topaz.vercel.app/",
   },
 }
 

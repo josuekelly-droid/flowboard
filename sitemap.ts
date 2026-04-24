@@ -1,7 +1,8 @@
+
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://flowboard.vercel.app"
+  const baseUrl = "https://flowboard-topaz.vercel.app"
 
   return [
     {

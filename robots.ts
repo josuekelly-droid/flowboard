@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/dashboard/"],
     },
-    sitemap: "https://flowboard.vercel.app/sitemap.xml",
+    sitemap: "https://flowboard-topaz.vercel.app/sitemap.xml",
   }
 }
