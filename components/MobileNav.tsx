@@ -6,6 +6,7 @@ import {
   DollarSign,
   CheckSquare,
   Folder,
+  User,
   LogOut,
 } from "lucide-react";
 import { signOut } from "next-auth/react";
@@ -15,6 +16,7 @@ const navLinks = [
   { href: "/dashboard/finance", label: "Finances", icon: DollarSign },
   { href: "/dashboard/tasks", label: "Tâches", icon: CheckSquare },
   { href: "/dashboard/files", label: "Fichiers", icon: Folder },
+  { href: "/dashboard/profile", label: "Profil", icon: User },
 ];
 
 interface MobileNavProps {
@@ -37,26 +39,26 @@ export function MobileNav({ currentPath }: MobileNavProps) {
             <Link
               key={link.href}
               href={link.href}
-              className={`flex flex-col items-center justify-center gap-0.5 px-2 py-1.5 rounded-lg min-w-0 flex-1 transition-colors ${
+              className={`flex flex-col items-center justify-center gap-0.5 px-1 py-1.5 rounded-lg min-w-0 flex-1 transition-colors ${
                 active
                   ? "text-primary font-medium"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
-              <Icon className="h-5 w-5 shrink-0" />
-              <span className="text-[10px] leading-tight truncate max-w-full">
+              <Icon className="h-4 w-4 shrink-0" />
+              <span className="text-[9px] leading-tight truncate max-w-full">
                 {link.label}
               </span>
             </Link>
           );
         })}
-        
+
         <button
           onClick={() => signOut({ callbackUrl: "/login" })}
-          className="flex flex-col items-center justify-center gap-0.5 px-2 py-1.5 rounded-lg min-w-0 flex-1 text-muted-foreground hover:text-red-500 transition-colors"
+          className="flex flex-col items-center justify-center gap-0.5 px-1 py-1.5 rounded-lg min-w-0 flex-1 text-muted-foreground hover:text-red-500 transition-colors"
         >
-          <LogOut className="h-5 w-5 shrink-0" />
-          <span className="text-[10px] leading-tight truncate max-w-full">
+          <LogOut className="h-4 w-4 shrink-0" />
+          <span className="text-[9px] leading-tight truncate max-w-full">
             Quitter
           </span>
         </button>
