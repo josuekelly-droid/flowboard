@@ -48,14 +48,6 @@ export function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* <div className="space-y-4">
-            <h4 className="font-semibold">Contact</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>contact@flowboard.com</li>
-              <li>rue de l'Innovation, Paris, France</li>
-            </ul>
-          </div> */}
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">

@@ -39,6 +39,11 @@ export const metadata: Metadata = {
   authors: [{ name: "FlowBoard" }],
   creator: "FlowBoard",
   publisher: "FlowBoard",
+
+  verification: {
+    google: "dWJrqv6vSdD38U8EjpYnRTGeZnNZxs8ZspfzWRRDrLk",
+  },
+
   robots: {
     index: true,
     follow: true,
